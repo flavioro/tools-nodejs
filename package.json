@@ -1,0 +1,8 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "Tools to api",
+  "main": "index.js",
+  "author": "Flavio",
+  "license": "MIT"
+}

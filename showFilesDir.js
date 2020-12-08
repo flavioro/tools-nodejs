@@ -17,3 +17,15 @@ files
 
 //node showFilesDir.js ../../nextjs/site-next/public/inicio/projetos-slides
 //node showFilesDir.js ../../nextjs/site-next/public/inicio/projetos-slides .*\.txt
+//node showFilesDir.js ../../nextjs/site-next/public/inicio/projetos-slides .*\.txt$
+
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions
+
+// Start with 'casa' casa^ 
+
+// node showFilesDir.js ../../nextjs/site-next/public/inicio/projetos-slides casa_s.*
+// node showFilesDir.js ./tst casa_s.*
+
+// node showFilesDir.js tst casa_.* //return 5 files
+// node showFilesDir.js tst .*\.jpg  //return 4 files
+// node showFilesDir.js tst .*\.jpg$  //return 3 files

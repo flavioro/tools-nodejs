@@ -15,3 +15,8 @@ files
 
 // Usage
 // node rename.js path/to/directory 'string-to-search' 'string-to-replace''
+
+
+// E X A M P L E S
+//node rename.js tst casa_ casa- //RENAME * 'casa_' to 'casa-'
+//node rename.js ../../nextjs/site-next/public/inicio/projetos-slides casa_ casa- //RENAME * 'casa_' to 'casa-'

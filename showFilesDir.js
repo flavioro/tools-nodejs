@@ -29,3 +29,6 @@ files
 // node showFilesDir.js tst casa_.* //return 5 files
 // node showFilesDir.js tst .*\.jpg  //return 4 files
 // node showFilesDir.js tst .*\.jpg$  //return 3 files
+
+// node showFilesDir.js "../../HtmlCssJs/Site-bootstrap/assets/img/img-projetos/10.012/carousel-full - Copia/" 1.*\.jpg$
+// node showFilesDir.js "../../HtmlCssJs/Site-bootstrap/assets/img/img-projetos/10.014/carousel-full/" 1.*\.jpg$

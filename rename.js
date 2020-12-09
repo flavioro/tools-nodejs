@@ -20,3 +20,4 @@ files
 // E X A M P L E S
 //node rename.js tst casa_ casa- //RENAME * 'casa_' to 'casa-'
 //node rename.js ../../nextjs/site-next/public/inicio/projetos-slides casa_ casa- //RENAME * 'casa_' to 'casa-'
+// node rename.js "../../HtmlCssJs/Site-bootstrap/assets/img/img-projetos/10.012/carousel-full - Copia/" 

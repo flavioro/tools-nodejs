@@ -1,22 +1,20 @@
 const fs = require('fs');
 const fileExists = require('./tools/checkFile')
 // import fs from 'fs'
-const replaceText = require('./tools/replaceAll')
+const ReplaceAll = require('./tools/replaceAll')
 
-function replaceTextFile() {
-  // const Cat = books.Cat
-  // let cat1 = new Cat("Manny");
+const replaceTextFile = () => {
 
-  const strReplace = replaceText.ReplaceAll
-  let txtReplace = new strReplace()
+  console.log(ReplaceAll.ReplaceAll('Do more', 'more', 'more and more'))
 
-  const textReplace = txtReplace("  UseCanonicalName Off ", "UseCanonicalName Off", "UseCanonicalName Off \n   ProxyPreserveHost On")
-  console.log(textReplace)
-
-
+  // const strReplace = ReplaceAll.ReplaceAll
+  // console.log(strReplace)
+  // // let txtReplace = new strReplace()
+  // let txtReplace = new strReplace
+  // console.log(txtReplace)
 }
 
-async function validFile() { 
+async function validFile() {
   let fileExists1 = await fileExists.fileExists("./src/tmp/httpd.conf");
 
   if (fileExists1) {
@@ -26,5 +24,5 @@ async function validFile() {
 }
 
 
-
+replaceTextFile()
 validFile()

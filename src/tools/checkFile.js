@@ -2,7 +2,7 @@ const fs = require('fs')
 
 async function fileExists(nameFile) {
   try {
-     await fs.promises.access(nameFile);
+    await fs.promises.access(nameFile);
     console.info(`Success read file ${nameFile}`);
     return true;
   } catch (error) {
@@ -11,5 +11,5 @@ async function fileExists(nameFile) {
   }
 };
 
-module.exports.fileExists = fileExists;
+exports.fileExists = fileExists;
 

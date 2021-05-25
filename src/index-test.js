@@ -1,11 +1,10 @@
 const fs = require('fs');
 const fileExists = require('./tools/checkFile')
 const books = require('./tools/test')
-
+const replace = require('./tools/replaceAll')
 
 async function validFile() {
   let fileExists1 = await fileExists.fileExists("./src/tmp/httpd.conf");
-
 
   if (fileExists1) {
     console.log('Here read file')
@@ -18,6 +17,13 @@ async function validFile() {
   console.log(cat1.name)
 }
 
+function txt() {
+  // const Cat = books.Cat
+  // let cat1 = new Cat("Manny");
+  // const txtReplace = replace('Do more', 'more', 'more and more')
+  const txtReplace = replace.ReplaceAll('Do more', 'more', 'more and more')
+  console.log(txtReplace)
+}
 
-
-validFile()
+txt()
+// validFile()

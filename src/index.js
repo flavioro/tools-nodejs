@@ -1,10 +1,9 @@
-const fs = require('fs');
+const fs = require('fs')
 const fileExists = require('./tools/checkFile')
 // import fs from 'fs'
 const ReplaceAll = require('./tools/replaceAll')
 
 const replaceTextFile = () => {
-
   console.log(ReplaceAll.ReplaceAll('Do more', 'more', 'more and more'))
 
   // const strReplace = ReplaceAll.ReplaceAll
@@ -14,15 +13,13 @@ const replaceTextFile = () => {
   // console.log(txtReplace)
 }
 
-async function validFile() {
-  let fileExists1 = await fileExists.fileExists("./src/tmp/httpd.conf");
+async function validFile () {
+  const fileExists1 = await fileExists.fileExists('./src/tmp/httpd.conf')
 
   if (fileExists1) {
     replaceTextFile()
   }
-
 }
-
 
 replaceTextFile()
 validFile()

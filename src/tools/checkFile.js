@@ -1,15 +1,14 @@
 const fs = require('fs')
 
-async function fileExists(nameFile) {
+async function fileExists (nameFile) {
   try {
-    await fs.promises.access(nameFile);
-    console.info(`Success read file ${nameFile}`);
-    return true;
+    await fs.promises.access(nameFile)
+    console.info(`Success read file ${nameFile}`)
+    return true
   } catch (error) {
-    console.error(`Not found file ${nameFile}`, error);
-    return false;
+    console.error(`Not found file ${nameFile}`, error)
+    return false
   }
 };
 
-exports.fileExists = fileExists;
-
+module.exports.fileExists = fileExists

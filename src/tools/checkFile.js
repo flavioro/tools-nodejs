@@ -9,6 +9,6 @@ async function fileExists (nameFile) {
     console.error(`Not found file ${nameFile}`, error)
     return false
   }
-};
+}
 
 module.exports.fileExists = fileExists
